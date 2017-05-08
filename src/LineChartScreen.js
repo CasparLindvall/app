@@ -6,10 +6,11 @@ import {
 } from 'react-native';
 import reactAddonsUpdate from 'react-addons-update';
 import {LineChart} from 'react-native-charts-wrapper';
-
+/*
 var konsum = [10, 100, 150, 200];
 var prod   = [5, 50, 75, 100];
 var norm = [100, 100, 100, 100;]
+*/
 class LineChartScreen extends React.Component {
 
   constructor() {
@@ -50,7 +51,7 @@ class LineChartScreen extends React.Component {
         data: {
           $set: {
             dataSets: [{
-              values: [{y: 100}, {y: value1[1]}, {y: 105}, {y: 115}],
+              values: [{y: 1}, {y: 2}, {y: 3}, {y: 4}],
               label: 'Company X',
               config: {
                 lineWidth: 2,
@@ -64,7 +65,7 @@ class LineChartScreen extends React.Component {
                 valueFormatter: "##.000",
               }
             }, {
-              values: [{y: 90}, {y: 110}, {y: 100}, {y: 105}],
+              values: [{y: 11}, {y: 12}, {y: 13}, {y: 14}],
               label: 'Company Y',
               config: {
                 lineWidth: 1,

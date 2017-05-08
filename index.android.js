@@ -7,17 +7,20 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
+  View,
 } from 'react-native';
 
 //import LineChartScreen from 'LineChartScreen';
-var LineChartScreen = require('./src/LineChartScreen');
-
+var Line = require('./src/LineChartScreen');
+var Zero = require('./src/ZeroLineChartScreen');
+import Live from './src/LiveUpdateChartScreen';
+//var Live = require('./src/LiveUpdateChartScreen');
 
 export default class graf extends Component {
   render() {
     return (
-        <LineChartScreen>
-        </LineChartScreen>
+        <Live>
+        </Live>
       );
    }
  }
