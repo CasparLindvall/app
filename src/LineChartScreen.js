@@ -54,6 +54,8 @@ class LineChartScreen extends React.Component {
               values: [{y: 1}, {y: 2}, {y: 3}, {y: 4}],
               label: 'Company X',
               config: {
+                  //drawValues: false,
+                  //valueTextSize: 20,
                 lineWidth: 2,
                 drawCircles: false,
                 highlightColor: processColor('red'),
@@ -61,7 +63,7 @@ class LineChartScreen extends React.Component {
                 drawFilled: true,
                 fillColor: processColor('red'),
                 fillAlpha: 60,
-		            valueTextSize: 15,
+                valueTextSize: 15,
                 valueFormatter: "##.000",
               }
             }, {
@@ -76,7 +78,8 @@ class LineChartScreen extends React.Component {
                 drawFilled: true,
                 fillColor: processColor('blue'),
                 fillAlpha: 45,
-                circleColor: processColor('blue')
+                  valueTextSize: 15,
+                  circleColor: processColor('blue'),
               }
             }],
           }
@@ -84,7 +87,7 @@ class LineChartScreen extends React.Component {
         //Sett top axis name/marks
         xAxis: {
           $set: {
-            //valueFormatter: ['Q1', 'Q2', 'Q3', 'Q4']
+            valueFormatter: ['Q1', '', 'Q3']
           }
         }
       })
