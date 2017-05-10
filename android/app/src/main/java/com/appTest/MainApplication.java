@@ -1,4 +1,4 @@
-package com.graf;
+package com.appTest;
 
 import android.app.Application;
 

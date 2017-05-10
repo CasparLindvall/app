@@ -17,7 +17,7 @@ import {BarChart} from 'react-native-charts-wrapper';
 
 const GREEN = processColor('#71BD6A');
 const RED = processColor('#D14B5A');
-const ORG = processColor('#8470ff');
+const BLUE = processColor('#8470ff');
 
 class barMainK extends React.Component {
 
@@ -29,12 +29,12 @@ class barMainK extends React.Component {
             //valueDay: [1,2,4,5],
             data: {
                 dataSets: [{
-                    values: [{y: 5}],
+                    values: [{y: 7}, {y: 5}],
                     label: 'Zero line dataset',
                     config: {
                         //drawValues: false,
                         valueTextSize: 20,
-                        colors: [ORG]
+                        colors: [GREEN, BLUE]
                     }
                 }],
             },
